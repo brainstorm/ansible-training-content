@@ -2,7 +2,7 @@
 
 ## Build Instructions
 
-Build instructions can be found in build.yml.
+	ansible-playbook build.yml
 
 ### Dependencies
 

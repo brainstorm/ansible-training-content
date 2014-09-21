@@ -1,0 +1,72 @@
+---
+header:
+  author: Roman Valls Guimera 
+  title: Towards a SciFiLab for infrastructure
+  description: Automate, automate, automate 
+
+slides:
+   -
+     - h1: Towards a Sci-Fi-Lab
+     - h3: Automate, automate, automate 
+
+   -
+     - h1: Sci-Life-Lab is quite awesome, but...
+     - h3: Can we reach the SciFiLab?
+     - class_notes: 
+            Automation >>> Installation instructions.
+            Documentation should contain minimal install insn.
+            Why? Because we all want stable, auto-documented systems.
+            How? With Configuration management tools that enforce idempotence:http://en.wikipedia.org/wiki/Idempotence
+            What? Ansible.
+   -
+     - h1: At the beggining, there was...
+
+   -
+     - h1: The Sci-Cry-Lab!
+     - h4: What failed?
+     - h4: There was a wonderful Swedish Summer around 2011... 
+     - h4: and we were babysitting production systems :_(
+     - ol: 
+        - We had plenty of wiki documentation, not so good automation.
+        - Debugging a distributed RabbitMQ bug on UPPMAX on interactive nodes... good luck with that!
+        - Mis-use of python-kombu. Fixed. Documented. Forgotten.
+        - Differing standards on how to package our python modules/apps.
+     - class_notes: 
+            Automation >>> Installation instructions.
+            Documentation should contain minimal install insn.
+
+   -
+     - h1: Towards SciFiLab
+     - ol:
+        - Convert installation instructions into automated deployment (Automation >>> Installation instructions)
+        - More "local" development using VMs.
+        - Keep documentation in sync with reality, idempotent.
+        - Monitor, analyze, control.
+
+   - 
+     - h1: But, wait... SciLifeLab is already doing so!
+     - ol:
+        - IT guys (Eric, Fredrik,...) use *puppet* regularly in the servers.
+        - Guillermo created awesome Travis-CI deployment recipes during his thesis.
+        - Valentine's StatusDB monitors and controls stuff.
+        - We held some best practice sessions and courses on how to write python modules.
+        - Isn't it enough?
+
+   -
+     - h1: NO.
+     - class_notes: 
+            Can you see the problems?
+
+            Developers need to automate too, not only IT people.
+            Application logs should be actionable, not only infra logs.
+
+   -
+     - h1: Best practices, for automation too
+     - ol:
+         - Document first, always (but keep in mind it is just poor man's automation).
+         - Automate right after that, don't delay it!
+         - Resist the manual ssh hotfixes temptation... if you can't, do it and then, write code.
+         - Immediately couple your automation with minimum CI.
+     - class_notes:
+         Having integration testing (without tests), has value on its own! Otherwise a user will have to fix and go through the installation process again and again in the future.
+

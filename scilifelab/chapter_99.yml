@@ -1,0 +1,36 @@
+---
+header:
+  author: Roman Valls Guimera 
+  title: Towards a SciFiLab for infrastructure
+  description: Automate, automate, automate 
+
+slides:
+   -
+     - h2: Notable examples of big automations using Ansible
+     - link: ["https://github.com/jnv/ansible-fedora-infra", "https://github.com/jnv/ansible-fedora-infra"]
+     - link: ["http://debops.org/", "http://debops.org/"]
+     - link: ["https://github.com/galaxyproject/ansible-galaxy", "https://github.com/galaxyproject/ansible-galaxy"]
+     - link: ["https://github.com/curtisgithub/swiftacular", "https://github.com/curtisgithub/swiftacular"]
+
+     - link: ["http://galaxy.ansible.com", "https://galaxy.ansible.com"]
+     - class_notes:
+         The Fedora Project. All the servers, publicly available.
+         Debops, A collection of Ansible playbooks, scalable from one container to an entire data center.
+         Galaxy project, you can fetch it from Ansible Galaxy but it is Galaxy.
+         Swiftacular, a 3-node object storage backend. https://github.com/curtisgithub/swiftacular
+
+   -
+     - h3: If you did not like ansible, use some other CM... But use some!
+     - link: ["Chef", "https://www.getchef.com/chef/"]
+     - link: ["Puppet", "https://www.puppetlabs.com/"]
+     - link: ["Bash Booster", "http://www.bashbooster.net/"]
+   
+   -
+     - h3: About me...
+     - p: Used to work @scilifelab, now @INCForg
+
+   -
+     - h2: And now, @guillem_ch!
+     - h4: But before that...
+     - h3: Let me deploy the next talk with a one-liner
+     - h4: cd elk && ansible-playbook -i site.yml

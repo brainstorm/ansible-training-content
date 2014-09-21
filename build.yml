@@ -19,6 +19,9 @@
   - name: syntax check advanced 
     shell: python syntax_check.py advanced/*.yml
 
+  - name: syntax check scilifelab 
+    shell: python syntax_check.py scilifelab/*.yml
+
   - name: build fundamentals
     shell: python build_single.py fundamentals > output/fundamentals.yml
  
@@ -28,6 +31,9 @@
   - name: build advanced 
     shell: python build_single.py advanced > output/advanced.yml
 
+  - name: build scilifelab 
+    shell: python build_single.py scilifelab > output/scilifelab.yml
+
   - name: render fundamentals
     command: revelator/write_it output/fundamentals.yml output/fundamentals/
 
@@ -36,3 +42,6 @@
 
   - name: render advanced 
     command: revelator/write_it output/advanced.yml output/advanced/
+  
+  - name: render scilifelab
+    command: revelator/write_it output/scilifelab.yml output/scilifelab/
