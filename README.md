@@ -2,7 +2,7 @@
 
 ## Build Instructions
 
-	ansible-playbook build.yml
+	ansible-playbook build.yml -i localhost,
 
 ### Dependencies
 

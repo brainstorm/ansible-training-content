@@ -10,7 +10,15 @@ slides:
      - h3: Automate, automate, automate 
 
    -
-     - h1: Sci-Life-Lab is quite awesome, but...
+     - h1: About me
+     - ul: 
+         - Used to work @scilifelab, now @INCForg.
+         - Was given the task to control a Amazon AWS distributed storage system.
+         - Check ansible-dataspace on http://github.com/brainstorm.
+         - Neuroscience, data analysis, trying to keep up with genomics too. See you in @braincode ;)
+
+   -
+     - h2: Sci-Life-Lab is quite awesome, but...
      - h3: Can we reach the SciFiLab?
      - class_notes: 
             Automation >>> Installation instructions.
@@ -24,8 +32,7 @@ slides:
    -
      - h1: The Sci-Cry-Lab!
      - h4: What failed?
-     - h4: There was a wonderful Swedish Summer around 2011... 
-     - h4: and we were babysitting production systems :_(
+     - h4: Swedish summer 2011, we were babysitting production systems :_(
      - ol: 
         - We had plenty of wiki documentation, not so good automation.
         - Debugging a distributed RabbitMQ bug on UPPMAX on interactive nodes... good luck with that!
@@ -44,7 +51,7 @@ slides:
         - Monitor, analyze, control.
 
    - 
-     - h1: But, wait... SciLifeLab is already doing so!
+     - h2: But, wait... SciLifeLab is already doing so!
      - ol:
         - IT guys (Eric, Fredrik,...) use *puppet* regularly in the servers.
         - Guillermo created awesome Travis-CI deployment recipes during his thesis.
@@ -61,11 +68,11 @@ slides:
             Application logs should be actionable, not only infra logs.
 
    -
-     - h1: Best practices, for automation too
+     - h1: Best practices for automation, too
      - ol:
          - Document first, always (but keep in mind it is just poor man's automation).
          - Automate right after that, don't delay it!
-         - Resist the manual ssh hotfixes temptation... if you can't, do it and then, write code.
+         - Resist the manual hotfixes temptation... if you can't, do it and then, write code.
          - Immediately couple your automation with minimum CI.
      - class_notes:
          Having integration testing (without tests), has value on its own! Otherwise a user will have to fix and go through the installation process again and again in the future.
