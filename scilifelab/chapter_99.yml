@@ -5,6 +5,9 @@ header:
   description: Automate, automate, automate 
 
 slides:
+   - set_global:
+       transition: none
+       background: 'black'
    -
      - h2: Notable examples of big automations using Ansible
      - link: ["https://github.com/jnv/ansible-fedora-infra", "https://github.com/jnv/ansible-fedora-infra"]
@@ -26,7 +29,7 @@ slides:
      - link: ["Bash Booster", "http://www.bashbooster.net/"]
 
    -
-     - h2: And now, @guillem_ch!
+     - h2: And now, @guillemch!
      - h4: But before that...
      - h3: Let me deploy the next talk with a one-liner
      - h4: cd elk && ansible-playbook -i site.yml
