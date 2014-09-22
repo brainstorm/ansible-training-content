@@ -29,6 +29,17 @@ slides:
      - link: ["Bash Booster", "http://www.bashbooster.net/"]
 
    -
+     - h1: Oh, and one more thing... 
+
+   - 
+     - h1: Just for you, SciFiLab, the SWEDAC boring docs killer app...
+
+   - 
+     - h1: AnsiGenome
+     - h5: or... the "never document how the infrastructure works, again" tool
+     - link: ["https://github.com/nickjj/ansigenome", "https://github.com/nickjj/ansigenome"]
+
+   -
      - h2: And now, @guillemch!
      - h4: But before that...
      - h3: Let me deploy the next talk with a one-liner
