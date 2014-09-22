@@ -18,6 +18,14 @@ slides:
          - Neuroscience, data analysis, trying to keep up with genomics too. See you in @braincode ;)
 
    -
+     - h1: Last chance to walk away, but before you do that...
+     - code: |
+          (sudo, if you lack venvs) pip install ansible
+          git clone --recursive http://github.com/brainstorm/ansible-training-content
+          ansible-playbook build.yml -i localhost,
+          open output/scilifelab/index.html
+
+   -
      - h2: Sci-Life-Lab is quite awesome, but...
      - h3: Can we reach the SciFiLab?
      - class_notes: 
